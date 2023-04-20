@@ -1,0 +1,59 @@
+.all{
+  overflow-y: hidden;
+  width: 100%;
+  padding: 20px 20px 120px 20px;
+  .taxtArea{
+    border: 1px solid #bbbbbb;
+    margin: 30px 10px 20px 10px;
+  }
+  .image{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      Image{
+        width: 220px;
+        height: 220px;
+        margin-right: 20px;
+      }
+      .update{
+        border: 1px dashed #bbb;
+        display: block;
+        width: 210px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+  }
+  .orderArea{
+    height: 80px;
+    margin-top: 20px;
+    .area{
+      float: left;
+      border: 1px solid #bbb;
+      width: 70%;
+      height: 80px;
+    }
+    .btn{
+      float: left;
+      height: 80px;
+      background-color: #4097da;
+      .icon{
+        color: #fff;
+      }
+
+    }
+  }
+}
+.submit{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #4097da;
+  color: #fff;
+  border-radius: 0%;
+  height: 100px;
+}

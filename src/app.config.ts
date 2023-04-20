@@ -1,9 +1,12 @@
 export default defineAppConfig({
   pages: [
+    // 'pages/orderDeal/index',
     'pages/index/index',
     'pages/order/index',
     'pages/approve/index',
-    'pages/orderDetail/index'
+    'pages/orderDetail/index',
+    'pages/orderDeal/index',
+    'pages/approveDetail/index'
   ],
   window: {
     backgroundTextStyle: 'light',

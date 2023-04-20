@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-around;
   Input{
-    width: 200px;
+    width: 250px;
+    height: 60px;
     background-color: #efefef;
     font-size: 24px;
     border-radius: 10%;
@@ -13,4 +14,19 @@
   height: 200px;
   background-color: rgb(219, 148, 148);
   font-size: 24px;
+}
+.list{
+  margin: 20px;
+  .listItem{
+    margin-top: 20px;
+    box-shadow:4px 4px 8px #666666;
+    border-radius: 12px;
+    .note{
+      width: 100px;
+      background-color: #80b436;
+      text-align: center;
+      color: #fff;
+      border-radius: 10px;
+    }
+  }
 }

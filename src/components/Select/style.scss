@@ -1,0 +1,37 @@
+.select-container {
+  position: relative;
+  width:150px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #efefef;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.icon{
+  position: absolute;
+  right: 10px;
+  bottom: 30%;
+}
+.select {
+  height: 60px;
+  // padding: 10px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.select-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 10;
+}
+.select-item {
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
