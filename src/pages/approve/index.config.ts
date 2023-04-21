@@ -1,3 +1,3 @@
 export default definePageConfig({
-  navigationBarTitleText: '审批详情'
+  navigationBarTitleText: '乔司智慧护民APP'
 })

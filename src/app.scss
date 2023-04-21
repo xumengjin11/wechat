@@ -1,1 +1,12 @@
 @import "~taro-ui/dist/style/index.scss";
+.my-drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%; /* 设置固定高度 */
+}
+.my-drawer .at-drawer__content {
+  height: 300px;
+  overflow-y: auto; /* 当内容超出高度时启用滚动条 */
+}

@@ -2,9 +2,33 @@ import react, { useEffect, useState } from 'react'
 import { View, Text, Button, Textarea, Image,Input } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import './index.scss'
+import { useDidShow, useDidHide } from '@tarojs/taro'
 
 export default function index() {
   const [value, setValue] = useState('');
+
+  // 点击返回上一页时的提示框
+  const onClickBack = ()=>{
+    console.log('dianjifanhui');
+    
+    Taro.showModal({
+      content: '是否存储当前记录为草稿？',
+      confirmText: '存草稿'
+    }).then((res) => {
+      if (res.confirm) {
+        console.log('用户点击了确认按钮');
+        // 在这里添加你的保存操作
+        Taro.navigateBack();
+        // 返回上一页
+      } else if (res.cancel) {
+        console.log('用户点击了取消按钮');
+        Taro.navigateBack();
+        // 直接返回上一页
+      }
+    });
+
+  }
+
   // 监听输入事件
   const handleInput = (event) => {
     // 设置输入框的值
@@ -39,11 +63,8 @@ export default function index() {
     return images.length;
   };
 
-
   return (
     <View>
-      
-
     <View className='all'>
       <Text>任务执行描述（{countWords()}/1000）</Text>
       <View>
@@ -73,6 +94,7 @@ export default function index() {
       </Button>
       </View>
       </View>
+      {/* <Button onClick={()=>onClickBack()} size='mini'>返回</Button> */}
     </View>
     <Button className='submit'>工单提交</Button>
 

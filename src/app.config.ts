@@ -1,6 +1,6 @@
 export default defineAppConfig({
   pages: [
-    // 'pages/orderDeal/index',
+    // 'pages/approveDetail/index',
     'pages/index/index',
     'pages/order/index',
     'pages/approve/index',
